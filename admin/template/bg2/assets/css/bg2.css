@@ -1,0 +1,217 @@
+body,h1,h3
+{
+	text-align:center;
+	padding:0px;
+	margin:0px;
+  overflow-x:hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  position: relative;
+  text-align: center;
+  color: #E7F7F5;
+  font-family: 'Helvetica Neue', 'Arial';
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.mwb_picture
+{
+  height:40px;
+  width:40px;
+  display:inline;
+}
+.mwb_content_section h1{
+overflow: hidden;
+
+}
+
+.mwb_content_section h3{
+overflow: hidden;
+
+}
+#mwb-wrapper
+{
+  background-image: url('../images/asphalt-buildings-city-379419 (1).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  position:relative;
+  background-attachment: fixed;
+}
+#mwb-wrapper:after
+{ 
+  position: absolute;
+  content: "";
+  background:#000000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+.mwb_heading1 {
+  color: white;
+  font-size: 53px;
+  font-weight:normal;
+  margin:0px;
+}
+.mwb_heading2 {
+  color: white;
+  font-size: 26px;
+  padding-top: 20px;
+  font-weight:normal;
+}
+.mwb_content_section {
+  padding-top: 50px;
+  position:relative;
+  z-index:1;
+}
+.mwb_email {
+  background: transparent;
+  margin-top: 25px;
+  padding: 7px 100px;
+  border:2px solid white;
+}
+.mwb_email::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; 
+  text-align:center;/* Firefox */
+}
+.mwb_button {
+  background-color: #11afd1;
+  margin-top: 25px;
+  padding: 9px 30px;
+  border: none;
+  color: white;
+  text-shadow: 1px 1px 0px #151313;
+  font-size: 14px;
+}
+#mwb-clockdiv{
+  font-family: sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 20px 10px 20px;
+}
+.mwb_timing_content {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#mwb-clockdiv .mwb_coming_soon_circle {
+  padding: 20px;
+  background-color: transparent;
+  display: inline-block;
+  color: #ffffff;
+  margin: 0px 8px;
+  border: 4px solid white;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  position: relative;
+}
+
+#mwb-clockdiv .mwb_coming_soon_circle span {
+  padding: 10px;
+  display: inline-block;
+  color: #0fb1e8;
+  font-weight: bold;
+  font-size: 42px;
+  padding-top: 0;
+}
+.mwb-smalltext{
+  font-weight: normal;
+  font-size: 17px;
+  color:#0fb1e8;
+  font-family:Helvetica, sans-serif;
+}
+.mwb_heading3
+{
+  font-size:20px;
+  font-weight:normal;
+  padding-top:30px;
+  color:white;
+}
+/*===================================
+=            media-query            =
+===================================*/
+@media only screen and (max-width:992px) {
+  #mwb-clockdiv .mwb_coming_soon_circle {
+    height: 113px;
+    width: 113px;
+  }
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+
+  #mwb-wrapper {
+    height: auto;
+    padding:20px;
+  }
+  .mwb_heading1 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+  }
+  .mwb_content_section {
+    padding-top: 28px;
+    position: relative;
+    z-index: 1;
+  }
+  .mwb_heading2 {
+
+    font-size: 18px;
+  }
+  .mwb_heading3 {
+    font-size: 17px;
+  }
+  #mwb-clockdiv .mwb_coming_soon_circle {
+    padding: 11px;
+    background-color: transparent;
+    display: inline-block;
+    color: #ffffff;
+    margin: 0px 8px;
+    box-shadow: 1px 1px 13px #1884a4;
+    border: 3px solid white;
+    border-radius: 0%; 
+    height: 72px;
+    width: 72px;
+    margin-top: 10px;
+  }
+  #mwb-clockdiv .mwb_coming_soon_circle span {
+    padding: 10px;
+    color: #14bbf5;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .mwb-smalltext {
+    font-size: 17px;
+    color: #25bbef;
+
+  }
+
+  .mwb_email {
+
+    margin-top: 20px;
+    padding: 7px 50px;
+    border: 1px solid white;
+
+  }
+  .mwb_button {
+
+    margin-top: 10px;
+    padding: 7px 50px;
+    font-size: 15px;
+  }
+
+
+  /*=====  End of media-query  ======*/
